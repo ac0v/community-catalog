@@ -9,7 +9,7 @@
 version: '2'
 
 services:
-
+  
   zammad:
     scale: 1
     start_on_create: true
@@ -25,7 +25,10 @@ services:
   zammad-nginx:
     scale: 1
     start_on_create: true
-
+    lb_config:
+      port_rules:
+      - source_port: 80
+    
   zammad-postgresql:
     scale: 1
     start_on_create: true
