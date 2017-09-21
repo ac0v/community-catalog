@@ -14,30 +14,30 @@ services:
     scale: 1
     start_on_create: true
 
-  backup:
+  zammad-backup:
     scale: 1
     start_on_create: true
 
-  elasticsearch:
+  zammad-elasticsearch:
     scale: 1
     start_on_create: true
 
-  nginx:
+  zammad-nginx:
     scale: 1
     start_on_create: true
 
-  postgresql:
+  zammad-postgresql:
     scale: 1
     start_on_create: true
 
-  scheduler:
+  zammad-scheduler:
     scale: 1
     start_on_create: true
 
-  railsserver:
+  zammad-railsserver:
     scale: 1
     start_on_create: true
 
-  websocket:
+  zammad-websocket:
     scale: 1
     start_on_create: true
